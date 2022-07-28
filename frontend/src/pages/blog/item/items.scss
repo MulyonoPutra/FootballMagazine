@@ -1,0 +1,35 @@
+.container {
+    @apply flex justify-center flex-col md:flex-row gap-10 md:gap-5 px-2;
+
+    &-wrapper {
+        @apply overflow-hidden shadow-lg transition duration-500 ease-in-out transform hover:shadow-2xl rounded-lg md:w-80;
+    }
+
+    .images {
+        @apply max-h-40 w-full object-cover;
+    }
+
+    .card {
+        @apply bg-white w-full p-4;
+
+        .title {
+            @apply text-indigo-400 text-2xl font-medium;
+        }
+
+        .content {
+            @apply text-gray-600 font-light;
+        }
+
+        .read-more {
+            @apply inline-flex text-indigo-600 cursor-pointer;
+        }
+
+        .hastag {
+            @apply flex flex-wrap justify-start items-center py-3 border-b-2 text-xs text-white font-medium;
+
+            &-title {
+                @apply m-1 px-2 py-1 rounded bg-indigo-500;
+            }
+        }
+    }
+}

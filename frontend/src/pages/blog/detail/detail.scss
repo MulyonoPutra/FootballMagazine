@@ -1,0 +1,51 @@
+.details {
+    @apply mt-6 bg-gray-50;
+
+    &-container {
+        @apply px-10 py-6 mx-auto;
+
+        &-wrapper {
+            @apply max-w-6xl px-10 py-6 mx-auto bg-gray-50;
+
+            .cover {
+                @apply block transition duration-200 ease-out transform hover:scale-110;
+
+                &-img {
+                    @apply object-cover w-full shadow-sm h-full;
+                }
+            }
+
+            .tag {
+                @apply flex items-center justify-start mt-4 mb-4;
+
+                &-items {
+                    @apply px-2 py-1 font-bold bg-red-400 text-white rounded-lg hover:bg-gray-500 mr-4;
+                }
+            }
+
+            .title {
+                @apply sm:text-3xl md:text-3xl lg:text-3xl xl:text-4xl font-bold text-indigo-500  hover:underline;
+            }
+
+            .profile {
+                @apply font-light text-gray-600;
+
+                span {
+                    @apply flex items-center mt-6 mb-6;
+                }
+
+                img {
+                    @apply hidden object-cover w-14 h-14 mx-4 rounded-full sm:block;
+                }
+
+                h1 {
+                    @apply font-bold text-gray-700 hover:underline;
+                }
+            }
+
+            .body {
+                @apply max-w-4xl px-10  mx-auto text-2xl text-gray-700 mt-4 rounded bg-gray-100 text-left;
+            }
+        }
+    }
+}
