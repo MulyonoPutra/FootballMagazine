@@ -1,3 +1,4 @@
+import React from 'react';
 export interface SpaceProps {
   height: number;
   width?: number;
@@ -5,9 +6,9 @@ export interface SpaceProps {
 
 const Space = (props: SpaceProps) => {
 
-  const { height, width } = props;
+    const { height, width } = props;
 
-  return <div style={{ height, width }} />;
+    return <div style={{ height, width }} />;
 };
 
 export default Space;

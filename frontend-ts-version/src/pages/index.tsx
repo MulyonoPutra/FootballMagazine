@@ -7,11 +7,11 @@ import ArticleList from './articles/list/index';
 import ArticleDetails from './articles/details/index';
 
 export {
-  Register,
-  Login,
-  Home,
-  Main,
-  ArticleCreate,
-  ArticleList,
-  ArticleDetails,
+    Register,
+    Login,
+    Home,
+    Main,
+    ArticleCreate,
+    ArticleList,
+    ArticleDetails,
 };

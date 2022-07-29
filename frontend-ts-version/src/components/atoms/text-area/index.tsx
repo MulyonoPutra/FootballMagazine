@@ -1,5 +1,5 @@
+import React from 'react';
 import './text-area.scss';
-
 export interface TextAreaProps {
   className?: string;
   type?: string;
@@ -9,16 +9,16 @@ export interface TextAreaProps {
 }
 
 const TextArea = ({ className, handleChange, placeholder, value }: TextAreaProps) => {
-  return (
-    <div>
-      <textarea
-        className={className}
-        placeholder={placeholder}
-        value={value}
-        onChange={handleChange}
-      />
-    </div>
-  );
+    return (
+        <div>
+            <textarea
+                className={className}
+                placeholder={placeholder}
+                value={value}
+                onChange={handleChange}
+            />
+        </div>
+    );
 };
 
 export default TextArea;
